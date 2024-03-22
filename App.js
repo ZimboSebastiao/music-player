@@ -5,7 +5,6 @@ import { AppRegistry } from "react-native";
 import { PaperProvider } from "react-native-paper";
 import { name as appName } from "./app.json";
 
-import Inicial from "./src/screens/Inicial";
 import Music from "./src/screens/Music";
 
 const Stack = createNativeStackNavigator();
@@ -17,12 +16,6 @@ export default function App() {
         <StatusBar />
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Music">
-            <Stack.Screen
-              name="Inicial"
-              component={Inicial}
-              options={{ headerShown: false }}
-            />
-
             <Stack.Screen
               name="Music"
               component={Music}
